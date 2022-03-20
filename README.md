@@ -1,6 +1,6 @@
 # calibrated.hlw
 
-This code is used to estimate the natural rate of interest (r-star) using a calibrated Holston, Laubach and Williams (2017) multi-stage maximum likelihood estimation procedure, where the likelihood function is computed by the Kalman filter. For more details on the state-space model, refer to their paper.
+This code is used to estimate the natural rate of interest (r-star) using a calibrated Holston, Laubach and Williams (2017) multi-stage maximum likelihood estimation procedure, where the likelihood function is computed by the Kalman filter. For more details on the underlying state-space model, refer to their paper.
 
 The function run.hlw.estimation.R is called by run.hlw.R once for each economy. It takes as inputs the key variables for the given economy: log output, inflation, and the real and nominal short-term interest rates, as well as the specified constraints on ar and by. It calls the programs rstar.stageX.R to run the three stages of the HLW estimation. Additionally, it calls the programs median.unbiased.estimator.stageX.R to obtain the signal-to-noise ratios λg and λz.
 
